@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: SplatoonFamily;
+    src: url(../font/SplatFont2.ttf);
+}
+
+html {
+    background-image: url(../images/backgrounds/bg.png);
+    font-family: SplatoonFamily;
+    color: #f9f9f9;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    justify-content: center;
+}
+
+header {
+    padding: 6px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #0e0e0e;
+    width: 100%;
+}
+
+header img {
+    display: inline-block;
+    margin: 0;
+    padding-right: 30px;
+    width: 150px;
+}
+
+header h2 {
+    display: inline-block;
+}
+
+header img:hover {
+    color: #ebf900;
+    transform: rotate(-4deg);
+}
+
+a {
+    text-decoration: none;
+    color: #f9f9f9;
+}
+
+span a:hover {
+    color: #5730f0;
+    transform: rotate(-2deg);
+}
+
+.yourDeck {
+    width: 40%;
+    height: 60vh;
+    margin: 5px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: baseline;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background-color: #292e34;
+    color: #f9f9f9;
+    overflow-y: auto;
+}
+
+.allCards {
+    width: 40%;
+    height: 60vh;
+    margin: 5px;
+    padding: 20px;
+    align-content: center;
+    border-radius: 10px;
+    background-color: #292e34;
+    color: #f9f9f9;
+    overflow-y: scroll;
+}
+
+.cardSlot {
+    width: 80px;
+    height: 111px;
+    margin: 5px;
+    border: #f9f9f9 solid 2px;
+    border-radius: 5px;
+}
+
+.card {
+    width: 80px;
+}
+
+#forms{
+    display: flex;
+}
+
+form {
+    width: 80%;
+    overflow: hidden;
+    margin: 5px;
+    padding: 20px;
+}
+
+form button, form input{
+    padding: 10px;
+    background-color: #5730f0;
+    border-radius: 7px;
+    border-color: #5730f0;
+    font-family: SplatoonFamily;
+    color: #f9f9f9;
+}
+
+form input::file-selector-button{
+    background-color: #ebf900;
+    border-radius: 7px;
+    border-color: #5730f0;
+    font-family: SplatoonFamily;
+    color: #000000;
+}
+
+form input::file-selector-button:hover{
+    filter: brightness(120%);
+}
+
+#nonUpload:hover{
+    filter: brightness(120%);
+}
+
+.cardContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.deckBox {
+    width: 300px;
+    height: 300px;
+    background-color: #8a8a8a;
+    border-radius: 30px;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+    justify-content: center;
+}
+
+.deckBox p {
+    text-align: left;
+    
+}
+
+.deckButton {
+    margin: 10px;
+    background-color: #5730f0;
+    border-radius: 7px;
+    border-color: #5730f0;
+    font-family: SplatoonFamily;
+    color: #f9f9f9;
+    width: 250px;
+    height: 70px;
+    font-size: 30px;
+    position: absolute;
+    bottom:0;
+    left: 31px;
+}
+
+.deckBox button:hover {
+    filter: brightness(150%);
+}
+
+.browseBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 80%;
+}
+
+.landingImg1 {
+    height: 600px;
+    float: left;
+}
+
+.landingImg2 {
+    height: 400px;
+    float: right;
+}
+
+.indText {
+    font-size: 24px;
+}
+
+.indText img{
+    width: 200px;
+}

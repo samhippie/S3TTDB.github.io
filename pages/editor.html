@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TTB - Deck Editor</title>
+    <link href="../resources/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="../resources/images/other/icon.png">
+</head>
+<script src="../resources/js/draggable.js"></script>
+<script src="../resources/js/jquery-1.4.3.min.js"></script>
+<script src="../resources/js/jsonUploader.js"></script>
+
+<body onload="generateCards()">
+    <header>
+        <a href="../index.html">
+            <img src="../resources/images/other/logo.png">
+        </a>
+        <span class="navigator">
+            <h2><a href="../pages/editor.html">Build Deck</a> | <a href="../pages/browse.html">Browse Decks</a> | <a
+                    href="../pages/about.html">About</a></h2>
+        </span>
+    </header>
+    <div class="cardContent">
+        <div class="yourDeck">
+            <div class="cardSlot" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="cardSlot" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="cardSlot" id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="cardSlot" id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="cardSlot" id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="cardSlot" id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="cardSlot" id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="cardSlot" id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="cardSlot" id="div9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="cardSlot" id="div10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="cardSlot" id="div11" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="cardSlot" id="div12" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="cardSlot" id="div13" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="cardSlot" id="div14" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="cardSlot" id="div15" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="allCards" id="allCards" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+    </div>
+    <center>
+    <div id="forms">
+        <form id="uploadForm">
+            <input id="file" type="file" value="import" />
+            <button id="import" type="button">Upload</button>
+        </form>
+        <form id="downloadForm">
+            <label for="dName">Deck Name:</label>
+            <input id="dName" type="text" value="" name="dName" />
+            <input id="export" type="button" value="Download">
+        </form>
+    </div>
+    </center>
+
+</body>
+
+</html>
