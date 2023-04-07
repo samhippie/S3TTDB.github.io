@@ -11,6 +11,8 @@ $(document).ready(()=> {
         var fr = new FileReader();
 
         fr.onload = function (e) {
+            $("#allCards").html("");
+            generateCards();
             var result = JSON.parse(e.target.result);
             let cards = result.cards;
             for (var i = 0; i <= 15; i++) {
